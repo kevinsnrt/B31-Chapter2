@@ -116,12 +116,12 @@ app.post('/blog', upload.single('image'), function (req, res) {
     // let title = req.body.title
     // let content = req.body.content
 
-    let { title, content } = req.body
+    // let { title, content } = req.body
 
     let blog = {
-        title: title,
-        content,
-        image: req.file.filename,
+        title: req.body.title,
+        content: req.body.content,
+        image: 'image.png',
         author_id: req.session.user.id
     }
 
