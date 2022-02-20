@@ -12,81 +12,48 @@
 <body>
   <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="/home">
-        <img src="public/assets/logo.png">
+    <div class="container-lg">
+      <a class="navbar-brand me-5" href="/home">
+        <img src="/public/assets/logo.png" alt="logo" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+            <a class="nav-link" href="/home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
+            <a href="/blog" class="nav-link list-active">Blog</a>
           </li>
         </ul>
 
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          {{#if isLogin}}
-          <li class="nav-item">
-            <a class="nav-link active  text-orange" aria-current="page" href="#">Hello,{{user.name}}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
-          </li>
-
-          {{else}}
-          <li class="nav-item">
-            <a class="nav-link active  text-orange" aria-current="page" href="/register">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/login">Login</a>
-          </li>
-          {{/if}}
-        </ul>
-        <div class="d-flex contact-me">
-          <a href="/contact-me"> Contact Me </a>
-        </div>
+      </div>
+      <div class="d-flex contact-me">
+        <a href="/contact-me"> Contact Me </a>
       </div>
     </div>
   </nav>
 
   <!-- Card Profile -->
   <div class="personal">
-    <div class="left">
+    <div class="Right">
       <div class="card">
         <div class="image">
-          <img src="/public/assets/my-img.jpg" alt="my image" />
+          <img src="/public/assets/vin.jpeg" alt="my image" />
         </div>
         <div class="header">
-          <h1>Rhoma Irama</h1>
+          <h1>Kevin Hermanto</h1>
         </div>
         <div class="content">
           <p>
-            I became a superstar to make awesome app and software to bring new
-            life for mankind.
+            Fullstack Student
           </p>
-          <table border="1">
-            <tr>
-              <th>Project Name</th>
-              <th>Year</th>
-            </tr>
-            <tr>
-              <td>Dumbways Mobile App</td>
-              <td>2021</td>
-            </tr>
-          </table>
         </div>
       </div>
     </div>
-    <div class="right">
-      <div>
-        <h1>What i do</h1>
+
+  <div class="Left" style="margin-left: 20%;">
+      <div style="text-align: justify; width :30%; margin: top 10%;">
+        <h1 style="font-size: 25px; padding :10px">HI WELCOME TO MY HUT</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -95,32 +62,8 @@
           only five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
         </p>
-        <span class="skill">
-          <span>
-            <img src="/public/assets/js.png" alt="" />
-            <h3>Frontend Developer</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-              temporibus.
-            </p>
-          </span>
-          <span>
-            <img src="/public/assets/git.png" alt="" />
-            <h3>Version Control</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-              temporibus.
-            </p>
-          </span>
-          <span><img src="/public/assets/deploy.png" alt="" />
-            <h3>Automated Deployment</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-              temporibus.
-            </p>
-          </span>
-        </span>
-        <h1>Found Me on</h1>
+
+      <h1>Found Me on</h1>
         <span class="sosmed-list">
           <a href="facebook.com"><img src="/public/assets/facebook.png" alt="facebook" target="_blank" /></a>
           <a href="twitter.com"><img src="/public/assets/twitter.png" alt="twitter" target="_blank" /></a>
@@ -128,9 +71,17 @@
           <a href="mail.com"><img src="/public/assets/mail.png" alt="mail" target="_blank" /></a>
           <a href="wa.me/000000000"><img src="/public/assets/whatsapp.png" alt="whatsapp" target="_blank" /></a>
         </span>
+
+   
       </div>
+    </div> 
+     <div class="Project" style="margin-top: 20%; text-align:center">
+      <h1>My Project</h1>
+       
+
     </div>
   </div>
 </body>
+
 
 </html>
