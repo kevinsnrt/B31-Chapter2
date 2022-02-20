@@ -75,6 +75,8 @@ app.get('/blog', function (req, res) {
                     ON tb_user.id = tb_blog.author_id 
                     ORDER BY id DESC`
 
+                    console.log("test")
+
     db.connect(function (err, client, done) {
         if (err) throw err
         client.query(query, function (err, result) {
