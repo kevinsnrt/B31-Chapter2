@@ -157,6 +157,19 @@ select {
   height: 250px;
 }
 
+.form .form-container .tech #tech1,
+#tech3 {
+  margin-left: 10%;
+}
+
+.form .form-container .tech #tech2 {
+  margin-left: 20%;
+}
+
+.form .form-container .tech #tech4 {
+  margin-left: 20%;
+}
+
 .form-container .input-blog-image-group {
   width: 100%;
   font-size: 20px;
